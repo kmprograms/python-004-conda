@@ -1,0 +1,47 @@
+1. Sprawdzanie wersji conda
+>> conda info
+
+2. Aktualizacja conda
+>> conda update conda
+
+3. Pobranie wszystkich environments
+>> conda info -e
+
+4. Tworzenie nowego environment
+>> conda create -n env_11 django
+>> conda create -n env_11 python=3.8 django
+
+5. Aktywowanie environment
+>> conda activate env_11
+
+6. Deaktywowanie environment
+>> conda deactivate
+
+7. Tworzenie kopii environment
+>> conda create -n env_2 --clone env_1
+
+8. Usuwanie environment
+>> conda remove -n env1 --all
+
+9. Zapisywanie aktywnego environment do pliku
+>> conda env export > env_1.yaml
+
+10. Odczytywanie environment z pliku
+>> conda env create -f env_1.yaml
+
+11. Lista wszystkich paczek zainstalowanych w ramach danego environment
+>> conda list
+
+12. Wyszukiwanie paczki w celu zainstalowania
+>> conda search django
+
+13. Instalacja paczki
+>> conda install -n env_1 django
+>> conda install django  --> instalacja django w aktywnym environment
+
+14. Aktualizacja paczki w ramach environment
+>> conda update django
+
+15. Usuwanie paczki z environment
+>> conda remove --name env_1 django
+>> conda remove django  --> usuwanie paczki z aktywnego environment
